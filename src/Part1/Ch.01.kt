@@ -8,3 +8,8 @@ fun main(args: Array<String>) { //최상위 함수
     val oldest = persons.maxBy { it.age ?: 0 } //람다식과 엘비스 연산자
     println("나이가 가장 많은 사람 : $oldest") //문자열 템플릿
 }
+
+//[62p] 함수
+fun max (a: Int, b: Int): Int {
+    return if (a>b) a else b
+}
